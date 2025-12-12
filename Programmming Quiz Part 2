@@ -1,1 +1,24 @@
 
+def add_numbers(a, b):
+    return a + b
+
+def subtract_numbers(a, b):
+    return a - b
+
+def main():
+    print("Do you wish to do an addition or a subtraction problem? Input S for subtraction or A for addition")
+    choice = input().strip().upper()
+
+    num1 = float(input("Enter the first number: "))
+    num2 = float(input("Enter the second number: "))
+
+    if choice == "A":
+        result = add_numbers(num1, num2)
+        print("The result of the addition problem is:", result)
+    elif choice == "S":
+        result = subtract_numbers(num1, num2)
+        print("The result of the subtraction problem is:", result)
+    else:
+        print("Invalid choice :(. Restart the program and try again!")
+
+main()
